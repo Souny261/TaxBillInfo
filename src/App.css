@@ -1,38 +1,98 @@
+@font-face {
+  font-family: "phetsarath";
+  src: url("../src/fonts/Phetsarath-Regular.ttf");
+}
+@font-face {
+  font-family: "phetsarathB";
+  src: url("../src/fonts/Phetsarath-Bold.ttf");
+}
+
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.load {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.Bill {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(255, 245, 231);
+  height: 700px;
+  width: 900px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.centerContent {
+  height: 150px;
+  /* line-height: 150px; */
   display: flex;
   flex-direction: column;
-  align-items: center;
+  text-align: left;
+  padding-top: 20px;
+  padding-left: 95px;
+}
+
+.stokeText {
+  font-weight: bold;
+  font-size: 15px;
+  color: black;
+}
+
+.textStyleID {
+  font-size: 30px;
+  font-family: "Times New Roman", Times, serif;
+  color: red;
+}
+
+.txtTimeNewFont {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.txtPhetFont {
+  font-family: "phetsarathB";
+  font-size: 14px;
+}
+
+.txtTitleTimeNewFont {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.txtTitlePhetFont {
+  font-family: "phetsarathB";
+  font-size: 20px;
+}
+
+.txtSubTimeNewFont {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 14px;
+}
+
+.txtSubPhetFont {
+  font-family: "phetsarath";
+  font-size: 14px;
+}
+
+.containerCenter {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.CurrencyLao {
+  font-family: "phetsarathB";
+  font-size: 12px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.CurrencyEN {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 12px;
+  font-weight: bold;
 }
