@@ -3,6 +3,7 @@ import NumberFormat from "react-number-format";
 import QRCode from "qrcode.react";
 import { Grid, Typography, Box } from "@material-ui/core";
 import "../style/printBill.css";
+import generateWords from "../helper/number2word";
 class PrintBill extends React.Component {
   constructor(props) {
     super(props);
@@ -407,7 +408,9 @@ class PrintBill extends React.Component {
                 <Typography component="div">
                   <Box>
                     <div style={{ height: 25 }}>
-                      <span className="txtSubPhetFont"></span>
+                      <span className="txtSubPhetFont">
+                        {generateWords(data[0].Total)}
+                      </span>
                     </div>
                   </Box>
                 </Typography>
